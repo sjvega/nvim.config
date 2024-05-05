@@ -14,6 +14,7 @@ return {
 			["<C-s>"] = false,
 			["<C-h>"] = false,
 			["<C-l>"] = false,
+			["<C-r>"] = "actions.refresh",
 			["<A-d>"] = "actions.close",
 			["<A-w>"] = "actions.preview",
 			["<C-x>"] = "actions.select_split",

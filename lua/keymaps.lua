@@ -27,6 +27,6 @@ Nmap("<C-s>", "<cmd>w<CR>")
 Nmap("<leader>;", "A;<Esc><C-o>", { desc = "Insert ; at eol" })
 Nmap("<leader>}", "A;<Esc><C-o>", { desc = "Insert } at eol" })
 -- Change previous with bs
-Nmap("<bs>", "<C-o")
+Nmap("<bs>", "<C-o>")
 -- Plugin specific keymaps are within each plugin config
 -- vim: ts=2 sts=2 sw=2 etim.keymap.set("n", "", "<C-w><C-k>", )

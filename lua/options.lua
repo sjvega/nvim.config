@@ -1,10 +1,13 @@
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
+-- True colors
+vim.opt.termguicolors = true
+
 -- Make line numbers default
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.opt.colorcolumn = '80'
+vim.opt.colorcolumn = "80"
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = "a"
