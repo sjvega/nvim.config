@@ -21,11 +21,13 @@ Nmap("j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 -- Tab managemnt
 Nmap("<tab>", "<cmd>bnext<CR>", { silent = true, desc = "Next [T]ab" })
 Nmap("<s-tab>", "<cmd>bprev<CR>", { silent = true, desc = "Previous [T]ab" })
+-- Splits
+Nmap("<leader>n", "<cmd>vsplit<CR>", { silent = true, desc = "[N]ew (v)split" })
 -- Saving
 Nmap("<C-s>", "<cmd>w<CR>")
 -- Insert at bol or eol
-Nmap("<leader>;", "A;<Esc><C-o>", { desc = "Insert ; at eol" })
-Nmap("<leader>}", "A;<Esc><C-o>", { desc = "Insert } at eol" })
+Nmap("<leader>;", "A;<Esc>", { desc = "Insert ; at EoL" })
+Nmap("<leader>}", "A;<Esc>", { desc = "Insert } at EoL" })
 -- Change previous with bs
 Nmap("<bs>", "<C-o>")
 -- Plugin specific keymaps are within each plugin config

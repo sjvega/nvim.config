@@ -2,7 +2,7 @@ return {
 	"akinsho/bufferline.nvim",
 	version = "*",
 	dependencies = "nvim-tree/nvim-web-devicons",
-	config = true,
+	lazy = false,
 	opts = {
 		options = {
 			separator_style = "slant",
@@ -16,5 +16,8 @@ return {
 				return s
 			end,
 		},
+	},
+	keys = {
+		{ "<leader>bcl", "<cmd>BufferLineCloseLeft<CR>", { desc = "[B]uffer [C]lose to [L]eft" } },
 	},
 }
