@@ -22,9 +22,9 @@ Nmap("j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 Nmap("<tab>", "<cmd>bnext<CR>", { silent = true, desc = "Next [T]ab" })
 Nmap("<s-tab>", "<cmd>bprev<CR>", { silent = true, desc = "Previous [T]ab" })
 -- Splits
-Nmap("<leader>n", "<cmd>vsplit<CR>", { silent = true, desc = "[N]ew (v)split" })
+Nmap("<C-s>", "<cmd>vsplit<CR>", { silent = true, desc = "[S]plit window vertically" })
+Nmap("<C-S>", "<cmd>split<CR>", { silent = true, desc = "[S]plit window horizontally" })
 -- Saving
-Nmap("<C-s>", "<cmd>w<CR>")
 -- Insert at bol or eol
 Nmap("<leader>;", "A;<Esc>", { desc = "Insert ; at EoL" })
 Nmap("<leader>}", "A;<Esc>", { desc = "Insert } at EoL" })
