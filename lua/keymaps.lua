@@ -26,8 +26,8 @@ Nmap("<C-s>", "<cmd>vsplit<CR>", { silent = true, desc = "[S]plit window vertica
 Nmap("<C-S>", "<cmd>split<CR>", { silent = true, desc = "[S]plit window horizontally" })
 -- Saving
 -- Insert at bol or eol
-Nmap("<leader>;", "A;<Esc>", { desc = "Insert ; at EoL" })
-Nmap("<leader>}", "A;<Esc>", { desc = "Insert } at EoL" })
+Nmap("<leader>;", "mmA;<Esc>`m", { desc = "Insert ; at EoL" })
+Nmap("<leader>}", "mmA;<Esc>`m", { desc = "Insert } at EoL" })
 -- Change previous with bs
 Nmap("<bs>", "<C-o>")
 -- Plugin specific keymaps are within each plugin config
