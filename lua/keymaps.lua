@@ -22,8 +22,8 @@ Nmap("j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 Nmap("<tab>", "<cmd>bnext<CR>", { silent = true, desc = "Next [T]ab" })
 Nmap("<s-tab>", "<cmd>bprev<CR>", { silent = true, desc = "Previous [T]ab" })
 -- Splits
-Nmap("<C-s>", "<cmd>vsplit<CR>", { silent = true, desc = "[S]plit window vertically" })
-Nmap("<C-S>", "<cmd>split<CR>", { silent = true, desc = "[S]plit window horizontally" })
+Nmap("<leader>ws", "<cmd>vsplit<CR>", { silent = true, desc = "[S]plit window vertically" })
+Nmap("<leader>wS", "<cmd>split<CR>", { silent = true, desc = "[S]plit window horizontally" })
 -- Saving
 -- Insert at bol or eol
 Nmap("<leader>;", "mmA;<Esc>`m", { desc = "Insert ; at EoL" })
