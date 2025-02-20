@@ -19,8 +19,9 @@ Nmap("k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 Nmap("j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
 -- Tab managemnt
-Nmap("<tab>", "<cmd>bnext<CR>", { silent = true, desc = "Next [T]ab" })
-Nmap("<s-tab>", "<cmd>bprev<CR>", { silent = true, desc = "Previous [T]ab" })
+Nmap("<leader><tab>", "<cmd>bnext<CR>", { silent = true, desc = "Next [T]ab" })
+Nmap("<leader><s-tab>", "<cmd>bprev<CR>", { silent = true, desc = "Previous [T]ab" })
+Nmap("<leader>bc", "<cmd>bd<CR>", { silent = true, desc = "[B]uffer [C]lose" })
 -- Splits
 Nmap("<leader>ws", "<cmd>vsplit<CR>", { silent = true, desc = "[S]plit window vertically" })
 Nmap("<leader>wS", "<cmd>split<CR>", { silent = true, desc = "[S]plit window horizontally" })
@@ -29,6 +30,6 @@ Nmap("<leader>wS", "<cmd>split<CR>", { silent = true, desc = "[S]plit window hor
 Nmap("<leader>;", "mmA;<Esc>`m", { desc = "Insert ; at EoL" })
 Nmap("<leader>}", "mmA;<Esc>`m", { desc = "Insert } at EoL" })
 -- Change previous with bs
-Nmap("<bs>", "<C-o>")
+Nmap("<leader><bs>", "<C-o>")
 -- Plugin specific keymaps are within each plugin config
 -- vim: ts=2 sts=2 sw=2 etim.keymap.set("n", "", "<C-w><C-k>", )
