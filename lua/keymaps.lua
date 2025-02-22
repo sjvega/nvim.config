@@ -13,6 +13,10 @@ Nmap("<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
 Nmap("<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 Nmap("<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 Nmap("<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
+Nmap("<A-h>", "<cmd>vertical resize -5<CR>", { desc = "Decrease window width by 5" })
+Nmap("<A-j>", "<cmd>resize -5<CR>", { desc = "Decrease window height by 5" })
+Nmap("<A-k>", "<cmd>resize +5<CR>", { desc = "Increase window height by 5" })
+Nmap("<A-l>", "<cmd>vertical resize +5<CR>", { desc = "Increase window width by 5" })
 
 -- Remap for dealing with word wrap
 Nmap("k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
@@ -22,10 +26,6 @@ Nmap("j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 Nmap("<leader><tab>", "<cmd>bnext<CR>", { silent = true, desc = "Next [T]ab" })
 Nmap("<leader><s-tab>", "<cmd>bprev<CR>", { silent = true, desc = "Previous [T]ab" })
 Nmap("<leader>bc", "<cmd>bd<CR>", { silent = true, desc = "[B]uffer [C]lose" })
--- Splits
-Nmap("<leader>ws", "<cmd>vsplit<CR>", { silent = true, desc = "[S]plit window vertically" })
-Nmap("<leader>wS", "<cmd>split<CR>", { silent = true, desc = "[S]plit window horizontally" })
--- Saving
 -- Insert at bol or eol
 Nmap("<leader>;", "mmA;<Esc>`m", { desc = "Insert ; at EoL" })
 Nmap("<leader>}", "mmA;<Esc>`m", { desc = "Insert } at EoL" })
