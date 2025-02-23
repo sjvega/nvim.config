@@ -32,4 +32,5 @@ Nmap("<leader>}", "mmA;<Esc>`m", { desc = "Insert } at EoL" })
 -- Change previous with bs
 Nmap("<leader><bs>", "<C-o>")
 -- Plugin specific keymaps are within each plugin config
--- vim: ts=2 sts=2 sw=2 etim.keymap.set("n", "", "<C-w><C-k>", )
+-- modeline
+-- vim: ts=2 sts=2 sw=2
