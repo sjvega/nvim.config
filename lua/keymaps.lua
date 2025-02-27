@@ -25,12 +25,11 @@ Nmap("j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 -- Tab managemnt
 Nmap("<leader><tab>", "<cmd>bnext<CR>", { silent = true, desc = "Next [T]ab" })
 Nmap("<leader><s-tab>", "<cmd>bprev<CR>", { silent = true, desc = "Previous [T]ab" })
-Nmap("<leader>bc", "<cmd>bd<CR>", { silent = true, desc = "[B]uffer [C]lose" })
 -- Insert at bol or eol
 Nmap("<leader>;", "mmA;<Esc>`m", { desc = "Insert ; at EoL" })
 Nmap("<leader>}", "mmA;<Esc>`m", { desc = "Insert } at EoL" })
 -- Change previous with bs
-Nmap("<leader><bs>", "<C-o>")
+Nmap("<leader><bs>", "<C-o>", { desc = "Return to previous jump" })
 -- Plugin specific keymaps are within each plugin config
 -- modeline
 -- vim: ts=2 sts=2 sw=2
