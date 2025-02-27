@@ -29,36 +29,21 @@ return {
 			function()
 				Snacks.picker.smart()
 			end,
-			desc = "Smart Find Files",
+			desc = "Smart Search Files",
 		},
 		{
 			"<leader>,",
 			function()
 				Snacks.picker.buffers()
 			end,
-			desc = "Buffers",
-		},
-		{
-			"<leader>/",
-			function()
-				Snacks.picker.grep()
-			end,
-			desc = "Grep",
+			desc = "Search Buffers",
 		},
 		{
 			"<leader>:",
 			function()
 				Snacks.picker.command_history()
 			end,
-			desc = "Command History",
-		},
-		-- find
-		{
-			"<leader>fb",
-			function()
-				Snacks.picker.buffers()
-			end,
-			desc = "Buffers",
+			desc = "Search Command History",
 		},
 		{
 			"<leader>fc",
@@ -72,7 +57,7 @@ return {
 			function()
 				Snacks.picker.files()
 			end,
-			desc = "Find Files",
+			desc = "File search",
 		},
 		{
 			"<leader>fg",
@@ -87,50 +72,57 @@ return {
 			function()
 				Snacks.picker.projects()
 			end,
-			desc = "Projects",
+			desc = "File Projects",
 		},
 		{
 			"<leader>fr",
 			function()
 				Snacks.picker.recent()
 			end,
-			desc = "Recent",
+			desc = "Recent files",
 		},
 		-- git
 		{
-			"<leader>gb",
+			"<leader>gbr",
 			function()
 				Snacks.picker.git_branches()
 			end,
-			desc = "Git Branches",
+			desc = "[G]it [Br]anches",
 		},
 		{
 			"<leader>gl",
 			function()
 				Snacks.picker.git_log()
 			end,
-			desc = "Git Log",
+			desc = "[G]it [L]og",
 		},
 		{
 			"<leader>gL",
 			function()
 				Snacks.picker.git_log_line()
 			end,
-			desc = "Git Log Line",
+			desc = "[G]it [L]og [L]ine",
+		},
+		{
+			"<leader>glf",
+			function()
+				Snacks.picker.git_log_file()
+			end,
+			desc = "[G]it [L]og [F]ile",
 		},
 		{
 			"<leader>gs",
 			function()
 				Snacks.picker.git_status()
 			end,
-			desc = "Git Status",
+			desc = "[G]it [S]tatus",
 		},
 		{
 			"<leader>gS",
 			function()
 				Snacks.picker.git_stash()
 			end,
-			desc = "Git Stash",
+			desc = "[G]it [S]tash",
 		},
 		{
 			"<leader>gd",
@@ -139,30 +131,30 @@ return {
 			end,
 			desc = "Git Diff (Hunks)",
 		},
-		{
-			"<leader>gf",
-			function()
-				Snacks.picker.git_log_file()
-			end,
-			desc = "Git Log File",
-		},
 		-- Grep
 		{
-			"<leader>sb",
+			"<leader>//",
+			function()
+				Snacks.picker.grep()
+			end,
+			desc = "Grep",
+		},
+		{
+			"<leader>/b",
 			function()
 				Snacks.picker.lines()
 			end,
 			desc = "Buffer Lines",
 		},
 		{
-			"<leader>sB",
+			"<leader>/B",
 			function()
 				Snacks.picker.grep_buffers()
 			end,
 			desc = "Grep Open Buffers",
 		},
 		{
-			"<leader>sw",
+			"<leader>/w",
 			function()
 				Snacks.picker.grep_word()
 			end,
@@ -178,7 +170,7 @@ return {
 			desc = "Registers",
 		},
 		{
-			"<leader>s/",
+			"<leader>sh",
 			function()
 				Snacks.picker.search_history()
 			end,
@@ -297,11 +289,18 @@ return {
 			desc = "Undo History",
 		},
 		{
-			"<leader>uC",
+			"<leader>ss",
 			function()
-				Snacks.picker.colorschemes()
+				Snacks.picker.lsp_symbols()
 			end,
-			desc = "Colorschemes",
+			desc = "LSP Symbols",
+		},
+		{
+			"<leader>sS",
+			function()
+				Snacks.picker.lsp_workspace_symbols()
+			end,
+			desc = "LSP Workspace Symbols",
 		},
 		-- LSP
 		{
@@ -340,35 +339,7 @@ return {
 			end,
 			desc = "Goto T[y]pe Definition",
 		},
-		{
-			"<leader>ss",
-			function()
-				Snacks.picker.lsp_symbols()
-			end,
-			desc = "LSP Symbols",
-		},
-		{
-			"<leader>sS",
-			function()
-				Snacks.picker.lsp_workspace_symbols()
-			end,
-			desc = "LSP Workspace Symbols",
-		},
 		-- Other
-		{
-			"<leader>z",
-			function()
-				Snacks.zen()
-			end,
-			desc = "Toggle Zen Mode",
-		},
-		{
-			"<leader>Z",
-			function()
-				Snacks.zen.zoom()
-			end,
-			desc = "Toggle Zoom",
-		},
 		{
 			"<leader>.",
 			function()
@@ -391,13 +362,6 @@ return {
 			desc = "Notification History",
 		},
 		{
-			"<leader>bd",
-			function()
-				Snacks.bufdelete()
-			end,
-			desc = "Delete Buffer",
-		},
-		{
 			"<leader>cR",
 			function()
 				Snacks.rename.rename_file()
@@ -418,13 +382,6 @@ return {
 				Snacks.lazygit()
 			end,
 			desc = "Lazygit",
-		},
-		{
-			"<leader>un",
-			function()
-				Snacks.notifier.hide()
-			end,
-			desc = "Dismiss All Notifications",
 		},
 		{
 			"]]",
